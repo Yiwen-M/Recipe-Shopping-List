@@ -18,7 +18,6 @@ export class RecipeService {
         new Ingredient('Flour', 1),
         new Ingredient('Buttermilk', 1),
         new Ingredient('Egg', 2),
-
       ]
     ),
     new Recipe(
@@ -39,6 +38,10 @@ export class RecipeService {
 
   getRecipes() {
     return this.recipes.slice();
+  }
+
+  getRecipe(index: number) {
+    return this.recipes[index];
   }
 
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
