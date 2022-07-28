@@ -7,6 +7,7 @@ import { Recipe } from '../recipe.model';
 import * as fromApp from '../../store/app.reducer';
 import * as RecipesActions from '../store/recipe.actions';
 import * as ShoppingListActions from '../../shopping-list/store/shopping-list.actions';
+
 @Component({
   selector: 'app-recipe-detail',
   templateUrl: './recipe-detail.component.html',
